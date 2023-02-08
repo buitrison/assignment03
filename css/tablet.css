@@ -1,0 +1,9 @@
+@media only screen and (min-width: 576px) {
+  /* FOR TABLET */
+  #target {
+    padding-left: 15% !important;
+  }
+  h1.resize {
+    font-size: 40px !important;
+  }
+}
