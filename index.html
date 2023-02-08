@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <section id="header">
+      <div class="container-fluid position-relative">
+        <img src="/images/banner.jpg" alt="banner" class="img-fluid" />
+
+        <div
+          id="banner"
+          class="position-absolute top-25 start-50 text-center translate-middle"
+        >
+          <h1 class="resize">Bùi Trí Sơn</h1>
+          <span>Full Stack Developer</span>
+        </div>
+      </div>
+    </section>
+    <section id="nav-bar">
+      <nav
+        class="container navbar navbar-expand-sm bg-light text-sm-center px-sm-auto mx-sm-auto px-4 mx-0"
+      >
+        <ul class="navbar-nav justify-content-sm-center">
+          <li class="nav-item border-sm-start p-2 p-sm-3">
+            <a class="" href="#about"><i class="icon-user"></i> THÔNG TIN</a>
+          </li>
+          <li class="nav-item border-sm-start p-2 p-sm-3">
+            <a class="" href="#job-info"
+              ><i class="icon-doc-text-inv"></i> LÝ LỊCH</a
+            >
+          </li>
+          <li class="nav-item border-sm-start px-5 d-none d-sm-block">
+            <div class="d-none d-lg-block">
+              <h3 class="py-0 my-0">Bùi Trí Sơn</h3>
+              <span class="py-0 my-0">Full Stack Developer</span>
+            </div>
+          </li>
+          <li class="nav-item border-sm-start p-2 p-sm-3">
+            <a class="" href="#certificate"
+              ><i class="icon-mail-alt"></i> CHỨNG CHỈ</a
+            >
+          </li>
+          <li class="nav-item border-sm-start border-sm-end p-2 p-sm-3">
+            <a class="" href="#project"><i class="icon-star-1"></i> DỰ ÁN</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="about" class="bg-grey m-2">
+      <div class="container-fluid d-sm-flex p-0 m-0">
+        <div id="target" class="col-sm-6 px-3 py-5">
+          <h4 class="section-title">Mục tiêu nghề nghiệp</h4>
+          <p class="ps-2 mt-3">
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info" class="bg-body-secondary col-sm-6 ps-3 py-5">
+          <h4 class="section-title">Thông tin cá nhân</h4>
+          <div class="checkEmailForm">
+            <form class="mt-3">
+              <input
+                type="email"
+                class="form-control w-75 m-0"
+                id="email"
+                placeholder="Nhap Email"
+              />
+              <label for="email" class="form-label"
+                >Hay nhap Email de xac thuc</label
+              ><br />
+              <button
+                type="button"
+                onclick="checkEmail()"
+                class="btn btn-primary btn-sm my-2"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="m-0 p-0 infoForm d-none">
+            <ul class="mt-3 px-2">
+              <li><span>Giới tính</span> : Nam</li>
+              <li><span>Ngày sinh</span> : 02/05/1997</li>
+              <li><span>Điện thoại</span> : (+86) 08019800360</li>
+              <li>
+                <span>Email</span> :
+                <span class="replaceEmail">sinhvien@funix.edu.vn</span>
+              </li>
+              <li><span>Địa chỉ</span> : Hoằng Tiến, Hoằng Hoá, Thanh Hoá</li>
+              <li><span>Website</span> : https://buitrison.gifhub.io</li>
+            </ul>
+            <ul class="d-flex gap-2 px-2 pt-3">
+              <li>
+                <a href="#">
+                  <i class="icon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://facebook.com/tri.son.923">
+                  <i class="icon-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-gplus"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icon-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="job-info">
+      <!-- ----------- -->
+      <!-- For Mobile and Tablet -->
+      <!-- ----------- -->
+
+      <div
+        class="container-fluid d-lg-none m-auto py-3 px-2 d-flex flex-column flex-sm-row justify-content-center gap-4"
+      >
+        <div class="col d-flex flex-column gap-4">
+          <!-- Cot thu nhat -->
+          <div
+            class="border position-relative"
+            onmouseover="handle('KN')"
+            onmouseout="outHandle('KN')"
+          >
+            <!-- cot kinh nghiem -->
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Kinh nghiệm</h3>
+              </div>
+              <div class="float-end fs-2 px-2">
+                <i class="ic-toolbox text-primary"></i>
+              </div>
+            </div>
+            <div class="hideKN d-none">
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>Full Stack Developer - Công ty Y</h6>
+                  <i
+                    >05/2022 -
+                    <span class="badge bg-primary text-wrap">Hiện tại</span></i
+                  >
+                  <br />
+                  <p>
+                    - Xây dựng và phát triển Website dựa trên yêu cầu và thiết
+                    kế đã có.
+                  </p>
+                  <p>
+                    - Phân tích và thiết kế database, sử dụng các hệ quản trị
+                    CSDL(MySQL, SQLServer, NOSQL,...) và viết được các câu truy
+                    vấn.
+                  </p>
+                  <p>
+                    - Sử dụng ngôn ngữ Server-side(Python, Java,...) để xây dựng
+                    các Web service.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>Full Stack Developer - Công ty X</h6>
+                  <i>06/2021 - 04/2022</i>
+                  <br />
+                  <p>- Thiết kế Website dựa trên yêu cầu cầu của khách hàng</p>
+                  <p>- Sử dụng các công cụ: Figma, Canva, PTS.</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideKN badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('KN')"
+              >View more...</span
+            >
+          </div>
+
+          <div
+            class="border position-relative"
+            onmouseover="handle('Kn')"
+            onmouseout="outHandle('Kn')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Kĩ năng</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-tools-2 text-primary"></i>
+              </div>
+            </div>
+            <div class="hideKn d-none">
+              <div class="p-3 mb-3">
+                <p>HTML/CSS: Fundamental</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">Javascript: Intermediate</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">NoteJS: Intermediate</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">Boostrap: Fundamental</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideKn badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('Kn')"
+              >View Less...</span
+            >
+          </div>
+          <div
+            class="border position-relative"
+            onmouseover="handle('NN')"
+            onmouseout="outHandle('NN')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Ngôn ngữ</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-mic text-primary"></i>
+              </div>
+            </div>
+            <div class="hideNN d-none">
+              <div class="p-3 mb-3">
+                <p>Tiếng Anh Basic</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">Tiếng Nhật JLPT N1</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideNN badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('NN')"
+              >View more...</span
+            >
+          </div>
+        </div>
+
+        <div class="col d-flex flex-column gap-4">
+          <!-- cot thu hai -->
+          <div
+            class="border position-relative"
+            onmouseover="handle('HD')"
+            onmouseout="outHandle('HD')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Hoạt động</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-toolbox text-primary"></i>
+              </div>
+            </div>
+            <div class="hideHD d-none">
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>FPT Edu Hackathon 2019</h6>
+                  <i>03/2019 - 05/2019</i>
+                  <br />
+                  <p>- Giải 3 bằng A.</p>
+                  <p>- Đề tài: Trang Web phân loại rác thải.</p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>Câu lạc bộ Z</h6>
+                  <i>08/2016 - 08/2017</i>
+                  <br />
+                  <p>- Trưởng ban chuyên môn.</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideHD badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('HD')"
+              >View more...</span
+            >
+          </div>
+          <div
+            class="border position-relative"
+            onmouseover="handle('HV')"
+            onmouseout="outHandle('HV')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Học vấn</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-pencil text-primary"></i>
+              </div>
+            </div>
+            <div class="hideHV d-none">
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>FUNIX</h6>
+                  <i
+                    >01/2023 -
+                    <span class="badge bg-primary text-wrap">Hiện tại</span></i
+                  >
+                  <br />
+                  <p>- Tốt nghiệp chứng chỉ doanh nghiệp nhánh FullStack.</p>
+                  <p>- GPA: ??/??</p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>TRƯỜNG KINH TẾ QUỐC TẾ FUJI</h6>
+                  <i>04/2020 - 03/2022</i>
+                  <br />
+                  <p>- Chuyên ngành: business</p>
+                  <p>- GPA: ??/??</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideHV badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('HV')"
+              >View more...</span
+            >
+          </div>
+          <div
+            class="border position-relative"
+            onmouseover="handle('ST')"
+            onmouseout="outHandle('ST')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Sở thích</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-telescope text-primary"></i>
+              </div>
+            </div>
+            <div class="hideST d-none">
+              <div class="d-flex m-3 gap-2 flex-wrap justify-content-start">
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 55px; height: 55px; border-radius: 50%"
+                  >
+                    <i class="ic-strategy fs-1 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Tự học</div>
+                </div>
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 55px; height: 55px; border-radius: 50%"
+                  >
+                    <i class="ic-hotairballoon fs-1 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Chơi game</div>
+                </div>
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 55px; height: 55px; border-radius: 50%"
+                  >
+                    <i class="ic-megaphone fs-1 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Âm nhạc</div>
+                </div>
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 55px; height: 55px; border-radius: 50%"
+                  >
+                    <i class="ic-basket fs-1 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Mua sắm</div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideST badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('ST')"
+              >View more...</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------- -->
+      <!-- For Pc -->
+      <!-- For PC -->
+      <!-- ----------- -->
+
+      <div
+        class="container-fluid d-none w-lg-70 m-auto py-3 px-2 d-lg-flex justify-content-center gap-4"
+      >
+        <div
+          class="d-sm-flex flex-sm-column gap-4 w-lg-30 col-sm-4 col-lg-3 flex-lg-fill"
+        >
+          <!-- Cot thu nhat -->
+          <div
+            class="border position-relative"
+            onmouseover="handle('KN-PC')"
+            onmouseout="outHandle('KN-PC')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Kinh nghiệm</h3>
+              </div>
+              <div class="float-end fs-2 px-2">
+                <i class="ic-toolbox text-primary"></i>
+              </div>
+            </div>
+            <div class="hideKN-PC d-none">
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>Full Stack Developer - Công ty Y</h6>
+                  <i
+                    >05/2022 -
+                    <span class="badge bg-primary text-wrap">Hiện tại</span></i
+                  >
+                  <br />
+                  <p>
+                    - Xây dựng và phát triển Website dựa trên yêu cầu và thiết
+                    kế đã có.
+                  </p>
+                  <p>
+                    - Phân tích và thiết kế database, sử dụng các hệ quản trị
+                    CSDL(MySQL, SQLServer, NOSQL,...) và viết được các câu truy
+                    vấn.
+                  </p>
+                  <p>
+                    - Sử dụng ngôn ngữ Server-side(Python, Java,...) để xây dựng
+                    các Web service.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>Full Stack Developer - Công ty X</h6>
+                  <i>06/2021 - 04/2022</i>
+                  <br />
+                  <p>- Thiết kế Website dựa trên yêu cầu cầu của khách hàng</p>
+                  <p>- Sử dụng các công cụ: Figma, Canva, PTS.</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideKN-PC badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('KN-PC')"
+              >View more...</span
+            >
+          </div>
+          <div
+            class="border position-relative"
+            onmouseover="handle('ST-PC')"
+            onmouseout="outHandle('ST-PC')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Sở thích</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-telescope text-primary"></i>
+              </div>
+            </div>
+            <div class="hideST-PC d-none">
+              <div class="d-flex flex-wrap justify-content-start my-2 mx-3">
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 40px; height: 40px; border-radius: 50%"
+                  >
+                    <i class="ic-strategy fs-4 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Tự học</div>
+                </div>
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 40px; height: 40px; border-radius: 50%"
+                  >
+                    <i class="ic-hotairballoon fs-4 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Chơi game</div>
+                </div>
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 40px; height: 40px; border-radius: 50%"
+                  >
+                    <i class="ic-megaphone fs-4 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Âm nhạc</div>
+                </div>
+                <div class="col-3 p-0">
+                  <div
+                    class="border py-2 mx-auto text-center border-primary"
+                    style="width: 40px; height: 40px; border-radius: 50%"
+                  >
+                    <i class="ic-basket fs-4 text-primary"></i>
+                  </div>
+                  <div class="text-center py-2">Mua sắm</div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideST-PC badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('ST-PC')"
+              >View more...</span
+            >
+          </div>
+        </div>
+        <div
+          class="d-sm-flex flex-sm-column gap-4 w-lg-30 col-sm-3 col-lg-3 flex-lg-fill"
+        >
+          <!-- Cot thu hai -->
+          <div
+            class="border position-relative"
+            onmouseover="handle('HV-PC')"
+            onmouseout="outHandle('HV-PC')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Học vấn</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-pencil text-primary"></i>
+              </div>
+            </div>
+            <div class="hideHV-PC d-none">
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>FUNIX</h6>
+                  <i
+                    >01/2023 -
+                    <span class="badge bg-primary text-wrap">Hiện tại</span></i
+                  >
+                  <br />
+                  <p>- Tốt nghiệp chứng chỉ doanh nghiệp nhánh FullStack.</p>
+                  <p>- GPA: ??/??</p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>TRƯỜNG KINH TẾ QUỐC TẾ FUJI</h6>
+                  <i>04/2020 - 03/2022</i>
+                  <br />
+                  <p>- Chuyên ngành: business</p>
+                  <p>- GPA: ??/??</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideHV-PC badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('HV-PC')"
+              >View more...</span
+            >
+          </div>
+          <div
+            class="border position-relative"
+            onmouseover="handle('NN-PC')"
+            onmouseout="outHandle('NN-PC')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Ngôn ngữ</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-mic text-primary"></i>
+              </div>
+            </div>
+            <div class="hideNN-PC d-none">
+              <div class="p-3 mb-3">
+                <p>Tiếng Anh Basic</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">Tiếng Nhật JLPT N1</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideNN-PC badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('NN-PC')"
+              >View more...</span
+            >
+          </div>
+        </div>
+        <div
+          class="d-sm-flex flex-sm-column gap-4 w-lg-30 col-sm-4 col-lg-3 flex-lg-fill"
+        >
+          <!-- Cot thu ba -->
+          <div
+            class="border position-relative"
+            onmouseover="handle('HD-PC')"
+            onmouseout="outHandle('HD-PC')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Hoạt động</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-toolbox text-primary"></i>
+              </div>
+            </div>
+            <div class="hideHD-PC d-none">
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>FPT Edu Hackathon 2019</h6>
+                  <i>03/2019 - 05/2019</i>
+                  <br />
+                  <p>- Giải 3 bằng A.</p>
+                  <p>- Đề tài: Trang Web phân loại rác thải.</p>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <div class="position-relative px-2">
+                  <div class="position-absolute fs-1 text-primary">・</div>
+                </div>
+                <div class="p-3">
+                  <h6>Câu lạc bộ Z</h6>
+                  <i>08/2016 - 08/2017</i>
+                  <br />
+                  <p>- Trưởng ban chuyên môn.</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideHD-PC badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('HD-PC')"
+              >View more...</span
+            >
+          </div>
+          <div
+            class="border position-relative"
+            onmouseover="handle('Kn-PC')"
+            onmouseout="outHandle('Kn-PC')"
+          >
+            <div class="clearfix px-3 py-4">
+              <div class="float-start">
+                <h3>Kĩ năng</h3>
+              </div>
+              <div class="float-end fs-2 px-3">
+                <i class="ic-tools-2 text-primary"></i>
+              </div>
+            </div>
+            <div class="hideKn-PC d-none">
+              <div class="p-3 mb-3">
+                <p>HTML/CSS: Fundamental</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">Javascript: Intermediate</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">NoteJS: Intermediate</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+                <p class="pt-2">Boostrap: Fundamental</p>
+                <div class="d-flex gap-2 w-75 py-2">
+                  <div class="border w-30 border-primary"></div>
+                  <div class="border w-30"></div>
+                  <div class="border w-30"></div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <span
+              class="slideKn-PC badge text-bg-warning bg-opacity-50 position-absolute bottom-0 start-0 d-none m-2 p-2"
+              onclick="showContent('Kn-PC')"
+              >View more...</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chung chi, giai thuong -->
+
+    <section id="certificate" class="bg-grey">
+      <div class="container-fluid w-lg-70 m-auto px-2">
+        <h1 class="section-title pt-3">Chứng chỉ - Giải thưởng</h1>
+        <div class="row border-bottom border-warning py-sm-5 m-0">
+          <!-- Hang dau -->
+          <div class="col-sm border-sm-end border-xs-bottom border-warning">
+            <!-- Hang 1, cot thu 1 -->
+            <div class="row py-3 py-lg-0">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="/images/Cert_DBI.png" />
+              </div>
+              <div class="col-lg-7 pt-3 pt-lg-0">
+                <h6><b>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</b></h6>
+                <p>- Chứng chỉ thuộc chương trình CCDN.</p>
+                <p>- GPA: 8.0</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <!-- Hang 1, cot thu 2 -->
+            <div class="row py-3 py-lg-0">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="/images/Cert_PRF.png" />
+              </div>
+              <div class="col-lg-7 pt-3 pt-lg-0">
+                <h6><b>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</b></h6>
+                <p>- Chứng chỉ thuộc chương trình CCDN.</p>
+                <p>- GPA: 7.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-sm-5 m-0">
+          <!-- Hang hai -->
+          <div class="col-sm">
+            <!-- Hang 2, cot thu 1 -->
+            <div class="row py-3 py-lg-0">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="/images/Cert_WEB.png" />
+              </div>
+              <div class="col-lg-7 pt-3 pt-lg-0">
+                <h6><b>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</b></h6>
+
+                <p>- Chứng chỉ thuộc chương trình CCDN.</p>
+                <p>- GPA: 7.8</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm d-none d-sm-block">
+            <!-- Cot rong -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Du an -->
+    <section id="project">
+      <div class="container-fluid w-lg-70 m-auto m-sm-auto px-2">
+        <h1 class="section-title py-3">Dự án</h1>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-center gap-4"
+        >
+          <ul class="list-group col">
+            <!-- Du an thu 1 -->
+            <li class="list-group-item m-0 p-0">
+              <img
+                class="img-fluid"
+                src="/images/project_1.png"
+                alt="CV Ca nhan"
+              />
+            </li>
+            <li class="list-group-item text-uppercase">
+              <a href="/digital-cv.html?cvcanhan">CV Cá nhân</a>
+            </li>
+            <li class="list-group-item d-sm-flex">
+              <div class="col-sm-4 py-1 py-sm-0">
+                <div class="badge bg-primary text-wrap px-3 py-2 rounded-pill">
+                  2021
+                </div>
+              </div>
+              <div class="col-sm-8 py-1 py-sm-0 d-lg-flex flex-lg-row">
+                <div class="col-lg-5"><i class="icon-user-1"></i> FUNiX</div>
+                <div class="col-lg-7"><i class="icon-lamp"></i> Developer</div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <div class="col-4">Mô tả</div>
+              <div class="col-8">
+                Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như
+                kĩ năng nghề nghiệp.
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <div class="col-4">Nhiệm vụ</div>
+              <div class="col-8">
+                - Phát triển code - review code - Tối ưu code - Xử lý lỗi
+              </div>
+            </li>
+            <li class="list-group-item d-flex h-100">
+              <div class="col-4">Công nghệ</div>
+              <div class="col-8">- HTML, CSS</div>
+            </li>
+          </ul>
+          <ul class="list-group col">
+            <!-- Du an thu 2 -->
+            <li class="list-group-item m-0 p-0">
+              <img
+                class="card-img-top"
+                src="/images/project_2.png"
+                alt="CV Ca nhan"
+              />
+            </li>
+            <li class="list-group-item text-uppercase">
+              <a href="/digital-cv.html?pet">Trang web Quản lí thú cưng</a>
+            </li>
+            <li class="list-group-item d-sm-flex">
+              <div class="col-sm-4 py-1 py-sm-0">
+                <div class="badge bg-primary text-wrap px-3 py-2 rounded-pill">
+                  2021
+                </div>
+              </div>
+              <div class="col-sm-8 py-1 py-sm-0 d-lg-flex flex-lg-row">
+                <div class="col-lg-5"><i class="icon-user-1"></i> FUNiX</div>
+                <div class="col-lg-7"><i class="icon-lamp"></i> Developer</div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <div class="col-4">Mô tả</div>
+              <div class="col-8">
+                Ứng dụng giúp quản lý các thông tin của thú cưng như: cân nặng,
+                giống, tình trạng tiêm chủng,... Bao gồm các chức năng thêm /
+                sửa / xoá.
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <div class="col-4">Nhiệm vụ</div>
+              <div class="col-8">
+                - Phát triển code - review code - Tối ưu code - Xử lý lỗi
+              </div>
+            </li>
+            <li class="list-group-item d-flex h-100">
+              <div class="col-4">Công nghệ</div>
+              <div class="col-8">- HTML, CSS, JavaScript</div>
+            </li>
+          </ul>
+          <ul class="list-group col">
+            <!-- Du an thu 3 -->
+            <li class="list-group-item m-0 p-0">
+              <img
+                class="card-img-top"
+                src="/images/project_3.png"
+                alt="CV Ca nhan"
+              />
+            </li>
+            <li class="list-group-item text-uppercase">
+              <a href="/digital-cv.html?new">Trang Web xem tin tức</a>
+            </li>
+            <li class="list-group-item d-sm-flex">
+              <div class="col-sm-4 py-1 py-sm-0">
+                <div class="badge bg-primary text-wrap px-3 py-2 rounded-pill">
+                  2021
+                </div>
+              </div>
+              <div class="col-sm-8 py-1 py-sm-0 d-lg-flex flex-lg-row">
+                <div class="col-lg-5"><i class="icon-user-1"></i> FUNiX</div>
+                <div class="col-lg-7"><i class="icon-lamp"></i> Developer</div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <div class="col-4">Mô tả</div>
+              <div class="col-8">
+                Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có
+                thể tìm kiếm các tin tức dựa theo từ khoá.
+              </div>
+            </li>
+            <li class="list-group-item d-flex">
+              <div class="col-4">Nhiệm vụ</div>
+              <div class="col-8">
+                - Phát triển code - review code - Tối ưu code - Xử lý lỗi
+              </div>
+            </li>
+            <li class="list-group-item d-flex h-100">
+              <div class="col-4">Công nghệ</div>
+              <div class="col-8">- HTML, CSS, JavaScript</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="bg-grey">
+      <div class="container mt-3 py-3 w-50 m-auto">
+        <div class="d-flex justify-content-center gap-3">
+          <div>
+            <a href="http://facebook.com/tri.son.923"
+              ><i class="fs-5 icon-facebook-circled"></i>
+              <span class="d-none d-sm-inline">Facebook</span></a
+            >
+          </div>
+          <div>
+            <a href="#"
+              ><i class="fs-5 icon-linkedin-circled"></i
+              ><span class="d-none d-sm-inline"> Linkedin</span></a
+            >
+          </div>
+          <div>
+            <a href="#"
+              ><i class="fs-5 icon-github-circled"></i
+              ><span class="d-none d-sm-inline"> Github</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
